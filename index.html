@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <h2>JAVASCRIPT</h2>
+            <button id="b-color" onclick="changeColor()">Blue</button>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="content">
+        <section>
+            <p id="w-message"></p>
+            <h3 id="heading">Introduction to JavaScript</h3>
+            <p>JavaScript is a versatile programming language primarily used for web development. It allows developers to create interactive and dynamic web pages.</p>
+        </section>
+        <section>
+            <h3>Variables, Data types, operators and conditonals</h3>
+
+            <p>Enter your name and age to check if you are qualified for the sports competition</p>
+            <div>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"><br><dr></dr><br>
+                <!-- I have used validation function to check if the user is qualified for the sports competition<br> -->
+                <button id="btn-check" onclick="validation()">Submit</button><br>
+                <p id="message"></p>
+            </div>
+            </section>
+            
+        </section>
+        <section>
+            <div>
+                <h3>JavaScript Functions</h3>
+                <label for="name">Car name:</label>
+                <input type="text" id="car" name="car" required><br><br>
+                <label for="name">Car model:</label>
+                <input type="text" id="model" name="model" required><br><br>
+                <button id="btn-check" onclick="cars()">Submit</button><br>
+                <p id="text"></p>
+            </div>
+            <div>
+                <h4>Mini calculator</h4>
+                <input type="number" id="num1" placeholder="First number">
+                <input type="number" id="num2" placeholder="Second number">
+                <div>
+                    <button onclick="calc('+')">+</button>
+                    <button onclick="calc('-')">-</button>
+                    <button onclick="calc('*')">*</button>
+                    <button onclick="calc('/')">/</button>
+                    <p id="result"></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="countdown"></div>
+                <button id="startCountdown">Start Countdown</button>
+
+                <h2>Fruit List</h2>
+                <ul id="fruitList"></ul>
+
+                
+        </section>
+
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 JavaScript Learning Resources</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4c4c4;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+            "header"
+            "content "
+            "footer";
+    grid-template-rows: 1fr 4fr 2fr;
+    gap: 10px;
+    width: 95%;
+    height: 100vh;
+} 
+
+#b-color {
+    background-color: rgb(239, 239, 249);
+    padding: 2px;
+    border-radius: 5px;
+}
+#color-gray {
+    background-color: rgb(239, 239, 249);
+    padding: 2px;
+    border-radius: 5px;
+}
